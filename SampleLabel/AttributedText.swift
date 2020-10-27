@@ -16,6 +16,7 @@ struct AttributedText: UIViewRepresentable {
     let label = UILabel()
     label.numberOfLines = 0
     label.lineBreakMode = .byWordWrapping
+    label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
     return label
   }
 
