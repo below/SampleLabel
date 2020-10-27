@@ -27,7 +27,7 @@ Nam ornare hendrerit blandit. In lobortis eget mi nec dignissim. Aenean tincidun
 
     var body: some View {
         ScrollView {
-            AttributedText(text: attributedText)
+            Text(attributedText.string)
                 .accessibility(identifier: "Label")
                 .padding()
         }
