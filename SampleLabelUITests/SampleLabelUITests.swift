@@ -26,7 +26,9 @@ class SampleLabelUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-        let text = app.staticTexts["Label"]
+        let text = app.staticTexts.firstMatch
+
+        debugPrint(app.staticTexts)
 
         let appFrame = app.frame
         let textFrame = text.frame
